@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Sabrina Nguyen\'s Portfolio',
+  description: "Portfolio website built using react resume template",
 };
 
 /**
@@ -67,20 +67,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
+// bold: <strong className="text-stone-100">
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Sabrina Nguyen`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Hi, I'm Sabrina! I'm currently a <strong className="text-stone-100">Junior</strong> at the
+        <strong className="text-stone-100">University of Massachusetts Amherst</strong> pursuing a double
+        major in Computer Science and Mathematics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I hope to pursue a career in the <strong className="text-stone-100">Video Game Industry</strong>
+        industry as a Game Developer, Designer, or Programmer.
       </p>
     </>
   ),
@@ -93,11 +93,13 @@ export const heroData: Hero = {
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Email',
       primary: false,
     },
   ],
 };
+// add Icon of mail for email
+
 
 /**
  * About section

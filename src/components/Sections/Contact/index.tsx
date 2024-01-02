@@ -1,8 +1,8 @@
-import {DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
+/*import {DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import {FC, memo} from 'react';
 
-import {contact, SectionId} from '../../../data/data';
+//import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
@@ -23,6 +23,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
 };
 
+/*
 const Contact: FC = memo(() => {
   const {headerText, description, items} = contact;
   return (
@@ -69,3 +70,4 @@ const Contact: FC = memo(() => {
 
 Contact.displayName = 'About';
 export default Contact;
+*/

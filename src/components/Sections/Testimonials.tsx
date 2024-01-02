@@ -1,8 +1,8 @@
-import classNames from 'classnames';
+/*import classNames from 'classnames';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId, testimonial} from '../../data/data';
+//import {SectionId, testimonial} from '../../data/data';
 import {Testimonial} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
@@ -19,12 +19,12 @@ const Testimonials: FC = memo(() => {
 
   const {width} = useWindow();
 
-  const {imageSrc, testimonials} = testimonial;
+  //const {imageSrc, testimonials} = testimonial;
 
-  const resolveSrc = useMemo(() => {
-    if (!imageSrc) return undefined;
-    return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
-  }, [imageSrc]);
+  // const resolveSrc = useMemo(() => {
+  //   if (!imageSrc) return undefined;
+  //   return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
+  // }, [imageSrc]);
 
   // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
@@ -50,25 +50,26 @@ const Testimonials: FC = memo(() => {
     },
     [],
   );
-  const next = useCallback(() => {
-    if (activeIndex + 1 === testimonials.length) {
-      setTestimonial(0)();
-    } else {
-      setTestimonial(activeIndex + 1)();
-    }
-  }, [activeIndex, setTestimonial, testimonials.length]);
+  // const next = useCallback(() => {
+  //   if (activeIndex + 1 === testimonials.length) {
+  //     setTestimonial(0)();
+  //   } else {
+  //     setTestimonial(activeIndex + 1)();
+  //   }
+  // }, [activeIndex, setTestimonial, testimonials.length]);
 
   const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
     setScrollValue(event.currentTarget.scrollLeft);
   }, []);
 
-  useInterval(next, 10000);
+  //useInterval(next, 10000);
 
   // If no testimonials, don't render the section
-  if (!testimonials.length) {
-    return null;
-  }
+  // if (!testimonials.length) {
+  //   return null;
+  // }
 
+  /*
   return (
     <Section noPadding sectionId={SectionId.Testimonials}>
       <div
@@ -136,4 +137,4 @@ const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
   ),
 );
 
-export default Testimonials;
+export default Testimonials; */

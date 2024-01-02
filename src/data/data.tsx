@@ -75,11 +75,11 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Hello, I'm Sabrina! I'm currently a <strong className="text-stone-100">Junior</strong> at the 
-        <strong className="text-stone-100">University of Massachusetts Amherst</strong> pursuing a double
+        <strong className="text-stone-100"> University of Massachusetts Amherst</strong> pursuing a double
         major in Computer Science and Mathematics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I hope to pursue a career in the <strong className="text-stone-100">Video Game Industry</strong>
+        I hope to pursue a career in the <strong className="text-stone-100">Video Game Industry </strong>
          as a Game Developer or Software Engineer.
       </p>
     </>
@@ -367,6 +367,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sknooyen'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sabrina-nguyen-449b76223/'},
-  {label: 'Email', Icon: InstagramIcon, href: 'sabrinanguyen21@yahoo.com'},
+  //{label: 'Email', Icon: InstagramIcon, href: 'sabrinanguyen21@yahoo.com'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];

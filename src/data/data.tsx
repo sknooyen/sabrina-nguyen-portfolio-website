@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
@@ -37,7 +37,7 @@ import {
   SkillGroup,
   Social,
   //TestimonialSection,
-  TimelineItem,
+  //TimelineItem,
 } from './dataDef';
 
 /**
@@ -263,7 +263,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
+ 
 export const education: TimelineItem[] = [
   {
     date: 'April 2007',
@@ -303,6 +303,7 @@ export const experience: TimelineItem[] = [
     ),
   },
 ];
+*/
 
 /* Testimonial section
  

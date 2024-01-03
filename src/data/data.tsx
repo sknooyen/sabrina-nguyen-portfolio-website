@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Sabrina Nguyen\'s Portfolio',
-  description: "View Sabrina Nguyen's projects and more",
+  title: 'Sabrina Nguyen',
+  description: "Sabrina Nguyen's Portfolio",
 };
 
 /**

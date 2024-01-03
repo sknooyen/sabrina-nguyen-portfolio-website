@@ -45,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Sabrina Nguyen\'s Portfolio',
-  description: "Portfolio website built using react resume template",
+  description: "View Sabrina Nguyen's projects and more",
 };
 
 /**
@@ -60,6 +60,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
+  Email: 'sabrinanguyen21@yahoo.com',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -86,13 +87,13 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'Sabrina Nguyen Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
+      href: `#${SectionId.Email}`,
       text: 'Email',
       primary: false,
     },

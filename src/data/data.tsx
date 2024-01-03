@@ -11,10 +11,10 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 //import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import heroImage from '../images/boston.jpg';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import profilepic from '../images/editedheadshot.jpg';
-import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';

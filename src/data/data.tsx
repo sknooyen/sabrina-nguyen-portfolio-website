@@ -11,7 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 //import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/background3.jpg';
+import heroImage from '../images/background1.png';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import profilepic from '../images/editedheadshot.jpg';

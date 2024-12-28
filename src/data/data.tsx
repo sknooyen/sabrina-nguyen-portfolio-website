@@ -1,11 +1,6 @@
 import {
-  //AcademicCapIcon,
   ArrowDownTrayIcon,
-  //BuildingOffice2Icon,
-  //CalendarIcon,
-  //FlagIcon,
-  //MapIcon,
-  //SparklesIcon,
+  EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -69,7 +64,6 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-// bold: <strong className="text-stone-100">
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Sabrina Nguyen`,
@@ -82,7 +76,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I aspire to pursue a career in the <strong className="text-stone-100">Video Game Industry </strong>
-         as a Game Developer or Software Engineer.
+         as a Game Developer.
       </p>
     </>
   ),
@@ -97,11 +91,10 @@ export const heroData: Hero = {
       href: `mailto:${SectionId.Email}`,
       text: 'Email',
       primary: false,
+      Icon: EnvelopeIcon,
     },
   ],
 };
-// add Icon of mail for email
-
 
 /**
  * About section

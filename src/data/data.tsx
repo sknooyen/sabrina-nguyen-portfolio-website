@@ -9,7 +9,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/background.png';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
-import profilepic from '../images/editedheadshot.jpg';
+import profilePic from '../images/editedheadshot.jpg';
 // import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 // import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
@@ -100,7 +100,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: profilePic,
   description: `I am a hard-working and motivated student. My love for problem-solving and video 
   games has led me down my path of my computer science education and the pursuit to become a 
   part of the video game industry. Thank you for reading about me!`,
@@ -118,7 +118,7 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  {
+/*  {
     name: 'Spoken Languages',
     skills: [
       {
@@ -134,7 +134,7 @@ export const skills: SkillGroup[] = [
       //   level: 3,
       // },
     ],
-  },
+  },*/
   {
     name: 'Front-End Development',
     skills: [
@@ -371,6 +371,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sknooyen'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sabrina-nguyen-449b76223/'},
-  //{label: 'Email', Icon: InstagramIcon, href: 'sabrinanguyen21@yahoo.com'},
+  {label: 'Email', Icon: EnvelopeIcon, href: 'sabrinanguyen21@yahoo.com'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];

@@ -15,11 +15,6 @@ import heroImage from '../images/background.png';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import profilepic from '../images/editedheadshot.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 // import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
@@ -28,7 +23,11 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 //import testimonialImage from '../images/testimonial.webp';
 import favicon from '../images/NotFullBoxDarkBlue.png';
-
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import {
   About,
   //ContactSection,
@@ -151,8 +150,12 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
       {
-        name: 'TypeScript',
-        level: 5,
+        name: 'Angular',
+        level: 4,
+      },
+      {
+        name: 'JavaScript/HTML/CSS',
+        level: 6,
       },
     ],
   },
@@ -164,12 +167,16 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'C/C++',
+        name: 'C/C#/C++',
         level: 5,
       },
       {
-        name: 'JavaScript',
+        name: 'JavaScript/TypeScript',
         level: 4,
+      },
+      {
+        name: 'Python',
+        level: 3,
       },
     ],
   },

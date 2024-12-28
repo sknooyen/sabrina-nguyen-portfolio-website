@@ -27,6 +27,8 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 //import testimonialImage from '../images/testimonial.webp';
+import favicon from '../images/NotFullBoxDarkBlue.png';
+
 import {
   About,
   //ContactSection,
@@ -75,12 +77,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello, I'm Sabrina! I'm currently a <strong className="text-stone-100">Junior</strong> at the 
+        Hello, I'm Sabrina! I'm currently a <strong className="text-stone-100">Senior</strong> at the 
         <strong className="text-stone-100"> University of Massachusetts Amherst</strong> pursuing a double
         major in Computer Science and Mathematics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I hope to pursue a career in the <strong className="text-stone-100">Video Game Industry </strong>
+        I aspire to pursue a career in the <strong className="text-stone-100">Video Game Industry </strong>
          as a Game Developer or Software Engineer.
       </p>
     </>
@@ -93,7 +95,7 @@ export const heroData: Hero = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Email}`,
+      href: `mailto:${SectionId.Email}`,
       text: 'Email',
       primary: false,
     },

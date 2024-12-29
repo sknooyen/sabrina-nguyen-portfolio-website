@@ -9,7 +9,7 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <link href="/favicon.png" rel="icon" sizes="64x64" type="image/png"/>
+        <link href="/favicon-white.png?v=1" rel="icon" sizes="64x64" type="image/png"/>
       </Head>
       <Component {...pageProps} />
     </>

@@ -1,24 +1,3 @@
-/*import 'tailwindcss/tailwind.css';
-import '../globalStyles.scss';
-
-import type {AppProps} from 'next/app';
-import Head from 'next/head';
-import {memo} from 'react';
-
-const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
-  return (
-    <>
-      <Head>
-        <link href="/favicon-light-blue.png?v=1" rel="icon" sizes="64x64" type="image/png"/>
-      </Head>
-      <Component {...pageProps} />
-    </>
-  );
-});
-
-export default MyApp;
-*/
-
 import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
 
@@ -54,6 +33,21 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
+        {/* Inline script to set favicon before React mounts */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                const favicon = document.querySelector("link[rel='icon']");
+                if (favicon) {
+                  favicon.href = theme === 'dark' ? '/favicon-white.png' : '/favicon-dark-blue.png';
+                }
+              })();
+            `,
+          }}
+        />
+        {/* Default favicon for browsers without JavaScript */}
         <link
           href="/favicon-white.png"
           rel="icon"

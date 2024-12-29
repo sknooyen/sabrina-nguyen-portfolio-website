@@ -10,13 +10,18 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   useEffect(() => {
     // Function to set the favicon based on the theme
     const setFavicon = (theme: string) => {
-      const favicon = document.querySelector("link[rel='icon']");
-      if (favicon) {
-        favicon.setAttribute(
-          "href",
-          theme === "dark" ? "/favicon-white.png" : "/favicon-dark-blue.png"
-        );
+      let favicon = document.querySelector("link[rel='icon']");
+      if (!favicon) {
+        // Create the favicon link element if it doesn't exist
+        favicon = document.createElement("link");
+        favicon.setAttribute("rel", "icon");
+        document.head.appendChild(favicon);
       }
+      
+      favicon.setAttribute(
+        "href",
+        theme === "dark" ? "/favicon-white.png" : "/favicon-dark-blue.png"
+      );
     };
 
     // On first load, determine the theme
@@ -37,14 +42,7 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        {/* Default favicon to show initially (fallback) */}
-        <link
-          href="/favicon-white.png" // This could be light or dark depending on your needs
-          rel="icon"
-          sizes="192x192"
-          type="image/png"
-        />
-        {/* Optionally, you can also add the manifest link for PWA support */}
+        {/* No favicon initially here to avoid flicker */}
         <link href="/site.webmanifest" rel="manifest" />
       </Head>
       <Component {...pageProps} />

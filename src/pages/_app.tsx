@@ -10,18 +10,13 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   useEffect(() => {
     // Function to set the favicon based on the theme
     const setFavicon = (theme: string) => {
-      let favicon = document.querySelector("link[rel='icon']");
-      if (!favicon) {
-        // Create the favicon link element if it doesn't exist
-        favicon = document.createElement("link");
-        favicon.setAttribute("rel", "icon");
-        document.head.appendChild(favicon);
+      const favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement;
+      if (favicon) {
+        favicon.setAttribute(
+          "href",
+          theme === "dark" ? "/favicon-white.png" : "/favicon-dark-blue.png"
+        );
       }
-      
-      favicon.setAttribute(
-        "href",
-        theme === "dark" ? "/favicon-white.png" : "/favicon-dark-blue.png"
-      );
     };
 
     // On first load, determine the theme
@@ -42,7 +37,8 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        {/* No favicon initially here to avoid flicker */}
+        {/* Default favicon */}
+        <link href="/favicon-dark-blue.png" rel="icon" sizes="192x192" type="image/png" />
         <link href="/site.webmanifest" rel="manifest" />
       </Head>
       <Component {...pageProps} />

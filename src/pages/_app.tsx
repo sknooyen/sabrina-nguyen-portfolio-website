@@ -10,6 +10,8 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   useEffect(() => {
     // Function to set the favicon based on the theme
     const setFavicon = (theme: string) => {
+      // print system theme to console
+      console.log(`Current system theme: ${theme}`);
       const favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement;
       if (favicon) {
         favicon.setAttribute(

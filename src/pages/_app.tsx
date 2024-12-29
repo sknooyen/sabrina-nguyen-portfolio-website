@@ -8,6 +8,7 @@ import {useEffect} from 'react';
 // eslint-disable-next-line react-memo/require-memo
 const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   useEffect(() => {
+    // Function to set the favicon based on the theme
     const setFavicon = (theme: string) => {
       const favicon = document.querySelector("link[rel='icon']");
       if (favicon) {
@@ -18,9 +19,12 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
       }
     };
 
+    // On first load, determine the theme
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setFavicon(mediaQuery.matches ? "dark" : "light");
+    const initialTheme = mediaQuery.matches ? "dark" : "light";
+    setFavicon(initialTheme);
 
+    // Listen for changes in the system theme
     const listener = (e: MediaQueryListEvent) => {
       setFavicon(e.matches ? "dark" : "light");
     };
@@ -33,27 +37,15 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        {/* Inline script to set favicon before React mounts */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                const favicon = document.querySelector("link[rel='icon']");
-                if (favicon) {
-                  favicon.href = theme === 'dark' ? '/favicon-white.png' : '/favicon-dark-blue.png';
-                }
-              })();
-            `,
-          }}
-        />
-        {/* Default favicon for initial load */}
+        {/* Default favicon to show initially (fallback) */}
         <link
-          href="/favicon-white.png"
+          href="/favicon-white.png" // This could be light or dark depending on your needs
           rel="icon"
           sizes="192x192"
           type="image/png"
         />
+        {/* Optionally, you can also add the manifest link for PWA support */}
+        <link href="/site.webmanifest" rel="manifest" />
       </Head>
       <Component {...pageProps} />
     </>

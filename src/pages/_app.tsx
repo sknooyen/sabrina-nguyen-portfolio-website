@@ -47,7 +47,7 @@ const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
             `,
           }}
         />
-        {/* Default favicon for browsers without JavaScript */}
+        {/* Default favicon for initial load */}
         <link
           href="/favicon-white.png"
           rel="icon"

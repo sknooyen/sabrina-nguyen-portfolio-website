@@ -75,7 +75,7 @@ export const heroData: Hero = {
         major in Computer Science and Mathematics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I aspire to pursue a career in the <strong className="text-stone-100">Video Game Industry </strong>
+        With a strong passion for video games, I hope to contribute to the  <strong className="text-stone-100">Video Game Industry </strong>
          as a Game Developer.
       </p>
     </>
@@ -101,9 +101,11 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilePic,
-  description: `I am a hard-working and motivated student. My love for problem-solving and video 
-  games has led me down my path of my computer science education and the pursuit to become a 
-  part of the video game industry. Thank you for reading about me!`,
+  description: `Hello! I am currently a senior at the University of Massachusetts Amherst 
+  pursuing a double major in Computer Science and Mathematics with a concentration in Mathematical 
+  Computing. Video games have inspired me to explore the intricacies that go into creating long-lasting 
+  and immersive experiences. I aim to bring diverse perspectives and experiences to players around the world, 
+  while celebrating the impact and innovation of the video game industry. Thank you for reading about me!`,
   aboutItems: [
     // {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
     // {label: 'Age', text: '29', Icon: CalendarIcon},

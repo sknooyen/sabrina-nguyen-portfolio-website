@@ -104,8 +104,8 @@ export const aboutData: About = {
   description: `Hello! I am currently a senior at the University of Massachusetts Amherst 
   pursuing a double major in Computer Science and Mathematics with a concentration in Mathematical 
   Computing. Video games have inspired me to explore the intricacies that go into creating long-lasting 
-  and immersive experiences. I aim to bring diverse perspectives and experiences to players around the world, 
-  while celebrating the impact and innovation of the video game industry. Thank you for reading about me!`,
+  and immersive experiences for players like myself. I aim to bring diverse perspectives and experiences to players 
+  around the world, while celebrating the impact and innovation of the video game industry. Thank you for reading about me!`,
   aboutItems: [
     // {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
     // {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -119,7 +119,7 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-export const skills: SkillGroup[] = [
+// export const skills: SkillGroup[] = [
 /*  {
     name: 'Spoken Languages',
     skills: [
@@ -137,7 +137,7 @@ export const skills: SkillGroup[] = [
       // },
     ],
   },*/
-  {
+/*  {
     name: 'Front-End Development',
     skills: [
       {
@@ -193,6 +193,7 @@ export const skills: SkillGroup[] = [
     ],
   },
 ];
+*/
 
 /**
  * Portfolio section

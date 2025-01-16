@@ -30,7 +30,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
+  //SkillGroup,
   Social,
   //TestimonialSection,
   //TimelineItem,

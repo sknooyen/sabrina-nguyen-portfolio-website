@@ -1,4 +1,4 @@
-import {FC, memo} from 'react';
+/*import {FC, memo} from 'react';
 
 import {SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
@@ -19,19 +19,19 @@ const Resume: FC = memo(() => {
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
-        </ResumeSection> */}
-        <ResumeSection title="Skills">
-          {/* <p className="pb-8">Here you can show a snapshot of your skills to show off to employers</p> */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {skills.map((skillgroup, index) => (
-              <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
-            ))}
-          </div>
-        </ResumeSection>
-      </div>
-    </Section>
-  );
-});
+        // </ResumeSection>
+//         <ResumeSection title="Skills">
+//           { <p className="pb-8">Here you can show a snapshot of your skills to show off to employers</p>}
+//           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+//             {skills.map((skillgroup, index) => (
+//               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
+//             ))}
+//           </div>
+//         </ResumeSection>
+//       </div>
+//     </Section>
+//   );
+// });
 
-Resume.displayName = 'Resume';
-export default Resume;
+// Resume.displayName = 'Resume';
+// export default Resume;*/

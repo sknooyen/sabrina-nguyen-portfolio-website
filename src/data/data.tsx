@@ -201,7 +201,7 @@ export const aboutData: About = {
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Planet Parv',
-    description: 'Navigate as the astronaut, Parv, to collect all the samples on Mars!',
+    description: 'Navigate as the astronaut, Parv, to collect all the samples on Mars! Click here to see a demo of the game.',
     url: 'https://drive.google.com/file/d/1v5IX5T6puukjfDDAaAeRt5nK3y9xSuMV/view?usp=sharing',
     image: planet_parv,
   },

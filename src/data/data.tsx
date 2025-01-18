@@ -202,7 +202,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Planet Parv',
     description: `Planet Parv is an educational Mars exploration game developed by Sabrina Nguyen, Ashley McNamara, Kaitlyn Malsky, Ricky Lam, and Kelly Deng as the final project in a Game Programming course at UMass Amherst.
-    \n The game combines interactive learning with engaging gameplay to provide players a unique educational experience about Mars. Players control an astronaut named Parv, navigating Mars to collect samples, which each have a unique challenge in order to collect them.
+    \n Built using Unity, C#, and GitHub, the game combines interactive learning with engaging gameplay to provide players a unique educational experience about Mars. Players control an astronaut named Parv, navigating Mars to collect samples, which each have a unique challenge in order to collect them.
     \n Enemy AI was implemented to create obstacles and increase the difficulty of collecting the samples, while Mars facts were delivered through the UI to provide an educational element to the game. The final objective is to collect all samples and return to the rocket ship, which completes the mission and the game.
     \n Click here to see a demo of the game.`,
     url: 'https://drive.google.com/file/d/1v5IX5T6puukjfDDAaAeRt5nK3y9xSuMV/view?usp=sharing',

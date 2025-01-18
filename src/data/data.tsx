@@ -75,8 +75,8 @@ export const heroData: Hero = {
         major in Computer Science and Mathematics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        With a strong passion for video games, I hope to contribute to the  <strong className="text-stone-100">Video Game Industry </strong>
-         as a Game Developer.
+        With a strong passion for video games, I hope to contribute to the Video Game Industry 
+        as an aspiring <strong className="text-stone-100">Game Developer</strong>.
       </p>
     </>
   ),
@@ -205,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     \n Built using Unity, C#, and GitHub, the game combines interactive learning with engaging gameplay to provide players a unique educational experience about Mars. Players control an astronaut named Parv, navigating Mars to collect samples, which each have a unique challenge in order to collect them.
     \n Enemy AI was implemented to create obstacles and increase the difficulty of collecting the samples, while Mars facts were delivered through the UI to provide an educational element to the game. The final objective is to collect all samples and return to the rocket ship, which completes the mission and the game.
     \n Click here to see a demo of the game.`,
-    url: 'https://drive.google.com/file/d/1v5IX5T6puukjfDDAaAeRt5nK3y9xSuMV/view?usp=drive_link',
+    url: 'https://drive.google.com/file/d/1cvKLXuSkPIuX3_Ax86v-JqU-E3tM5x7J/view?usp=drive_link',
     image: planet_parv,
   },
 /*  {

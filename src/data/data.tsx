@@ -205,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     \n Built using Unity, C#, and GitHub, the game combines interactive learning with engaging gameplay to provide players a unique educational experience about Mars. Players control an astronaut named Parv, navigating Mars to collect samples, which each have a unique challenge in order to collect them.
     \n Enemy AI was implemented to create obstacles and increase the difficulty of collecting the samples, while Mars facts were delivered through the UI to provide an educational element to the game. The final objective is to collect all samples and return to the rocket ship, which completes the mission and the game.
     \n Click here to see a demo of the game.`,
-    url: 'https://drive.google.com/file/d/1cvKLXuSkPIuX3_Ax86v-JqU-E3tM5x7J/view?usp=drive_link',
+    url: 'https://youtu.be/kDC0j8XS1l0',
     image: planet_parv,
   },
 /*  {
@@ -377,8 +377,6 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sknooyen'},
-  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sabrina-nguyen21/'},
-  {label: 'Email', Icon: EnvelopeIcon, href: 'sabrinanguyen21@yahoo.com'},
-  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Email', Icon: EnvelopeIcon, href: 'mailto:sabrinanguyen21@yahoo.com'},
 ];
